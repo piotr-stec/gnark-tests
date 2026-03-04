@@ -29,7 +29,7 @@ describe("Verifier", function () {
       // Read proof from JSON file
       const proofData = JSON.parse(
         await fs.readFile(
-          path.resolve(__dirname, "../proof_solidity.json"),
+          path.resolve(__dirname, "../test_data/proof_solidity.json"),
           "utf-8"
         )
       );
@@ -50,7 +50,7 @@ describe("Verifier", function () {
       // Read public witness from JSON file
       const witnessData = JSON.parse(
         await fs.readFile(
-          path.resolve(__dirname, "../witness_solidity.json"),
+          path.resolve(__dirname, "../test_data/witness_solidity.json"),
           "utf-8"
         )
       );
